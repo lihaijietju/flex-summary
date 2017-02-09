@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局实例</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            height: 100%;
+        }
+        header{
+            background: pink;
+            height: 50px;
+        }
+        #containerBody{
+            display: flex;
+            flex-direction: row;
+            flex:1;
+            background: red;
+            align-items:stretch;
+        }
+        main{
+            flex:1;
+        }
+        nav{
+            order:-1;
+            width:200px;
+            background: lightblue;
+        }
+        aside{
+            width:200px;
+            background: green;
+        }
+        footer{
+            height: 50px;
+            background: blue;
+        }
+
+    </style>
+</head>
+<body id="container">
+<header>我是header</header>
+<div id="containerBody">
+    <main>我是主要内容</main>
+    <nav>我是导航</nav>
+    <aside>我是侧边栏</aside>
+</div>
+<footer>我是footer</footer>
+</body>
+</html>

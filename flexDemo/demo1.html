@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局实例</title>
+    <style>
+        #container{
+            width: 100%;
+            background: gray;
+            display: flex;
+            height: 300px;
+        }
+        #box1{
+            height: 100px;
+            background: green;
+            line-height: 40px;
+            font-size: 40px;
+            flex-grow:1;
+        }
+        #box2{
+            height:100px;
+            background:pink;
+            flex-grow:1;
+        }
+        #box3{
+            height: 100px;
+            background:red;
+            flex-grow:1;
+        }
+
+    </style>
+</head>
+<body>
+<p>三个网格平分所有空间</p>
+<div id="container">
+    <div id="box1">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+</div>
+
+</body>
+</html>
